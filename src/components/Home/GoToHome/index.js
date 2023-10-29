@@ -66,7 +66,8 @@ export const GoToHome = () => {
 						fontFamily: "Montserrat",
 						fontWeight: 600,
 						zIndex: 999,
-						textAlign: ["center", "center", "left"]
+						textAlign: ["center", "center", "left"],
+						mt: ["40px", "40px", "0px"]
 					}}
 				>
 					My All Latest Featured Work
@@ -80,7 +81,11 @@ export const GoToHome = () => {
 					Let&apos;s take your photograph to the next level. See real wonderful and beautiful
 					moment of your life.
 				</Typography>
-				<Box>
+				<Box
+					sx={{
+						display: ["none", "none", "flex"]
+					}}
+				>
 					<Image
 						src={"/images/curve.svg"}
 						width={450}
@@ -91,6 +96,25 @@ export const GoToHome = () => {
 							position: "absolute",
 							top: "-15px",
 							left: "-25px"
+							// zIndex: -1
+						}}
+					/>
+				</Box>
+				<Box
+					sx={{
+						display: ["flex", "flex", "none"]
+					}}
+				>
+					<Image
+						src={"/images/curve.svg"}
+						width={300}
+						height={300}
+						alt="Curve line"
+						style={{
+							objectFit: "cover",
+							position: "absolute",
+							top: "100px",
+							left: "20px"
 							// zIndex: -1
 						}}
 					/>
