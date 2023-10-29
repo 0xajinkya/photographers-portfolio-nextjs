@@ -13,11 +13,12 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body>
 				<Box
-          sx={{
-            display: "flex",
-            flexDirection: "column"
-          }}
-        >
+					sx={{
+						display: "flex",
+						flexDirection: "column",
+						overflowX: "hidden"
+					}}
+				>
 					<Navbar />
 					{children}
 					<Footer />

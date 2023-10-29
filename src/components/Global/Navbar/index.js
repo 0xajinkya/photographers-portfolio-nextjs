@@ -12,18 +12,18 @@ const CustomButton = ({ text, style, textStyle }) => {
 				justifyContent: "center",
 				gap: "10px",
 				color: "black",
-        borderRadius: "20px",
+				borderRadius: "20px",
 				":hover": {
 					bgcolor: "transparent"
 				},
-        ...style
+				...style
 			}}
 		>
 			<Typography
 				sx={{
 					fontSize: "14px",
 					fontFamily: "Gabarito",
-          ...textStyle
+					...textStyle
 				}}
 			>
 				{text}
@@ -37,9 +37,10 @@ export const Navbar = () => {
 		<Box
 			sx={{
 				bgcolor: "#F0EEF0",
-				px: "100px",
+				px: ["20px", "20px", "100px"],
 				py: "10px",
 				display: "flex",
+				gap: "30px",
 				justifyContent: "space-between",
 				alignItems: "center"
 			}}
@@ -74,19 +75,19 @@ export const Navbar = () => {
 				<CustomButton text={"Gallery"} />
 			</Box>
 			<Box>
-        <CustomButton 
-          text={"Contact Us"}
-          style={{
-            borderBottom: "1px solid black",
-            py: "2px",
-            borderRadius: "0px"
-          }}
-          textStyle={{
-            fontWeight: 600,
-            fontSize: "15px"
-          }}
-        />
-      </Box>
+				<CustomButton
+					text={"Contact Me"}
+					style={{
+						borderBottom: "1px solid black",
+						py: "2px",
+						borderRadius: "0px"
+					}}
+					textStyle={{
+						fontWeight: 600,
+						fontSize: "15px"
+					}}
+				/>
+			</Box>
 		</Box>
 	);
 };

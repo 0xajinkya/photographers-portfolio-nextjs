@@ -18,7 +18,8 @@ const Social = () => {
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
-				gap: "60px"
+				gap: "60px",
+				overflowX: "hidden"
 			}}
 		>
 			<Box
@@ -75,13 +76,13 @@ const Social = () => {
 				>
 					<Image
 						src={"/images/curve.svg"}
-						width={450}
+						width={350}
 						height={300}
 						alt="Curve line"
 						style={{
 							objectFit: "cover",
 							position: "absolute",
-							top: "-5px",
+							top: "-10px",
 							left: "10px",
 							zIndex: -1
 						}}

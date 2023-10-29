@@ -12,18 +12,42 @@ export const Main = () => {
 				flexDirection: ["column", "column", "row"],
 				alignItems: "center",
 				bgcolor: "#F0EEF0",
-				px: ["20px", "20px", "100px"],
+				// pl: ["10px", "10px", "50px"],
+				// pr: ["10px", "10px", "50px"],
 				py: "10px",
-				height: ["auto", "auto", "80vh"]
+				height: ["auto", "auto", "80vh"],
+				width: "100vw",
+				overflowX: "hidden!important"
 			}}
 		>
+			<Box
+				sx={{
+					// flex: 1,
+					display: ["flex", "flex", "none"],
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
+				<Image
+					src={"/images/harshal.png"}
+					width={500}
+					height={500}
+					style={{
+						objectFit: "cover",
+						objectPosition: "center"
+					}}
+					alt="Harshal"
+				/>
+			</Box>
 			<Box
 				sx={{
 					flex: 1,
 					display: "flex",
 					flexDirection: "column",
 					gap: "35px",
-					ml: ["200px", "200px", "0px"],
+					px: ["20px", "20px", "100px"],
+					alignItems: ["center", "center", 'flex-start'],
+					// ml: ["200px", "200px", "0px"],
 					mt: ["30px", "30px", "0px"]
 				}}
 			>
@@ -40,7 +64,8 @@ export const Main = () => {
 				<Typography
 					sx={{
 						fontSize: "15px",
-						fontFamily: "Montserrat"
+						fontFamily: "Montserrat",
+						textAlign: ["center", "center", "left"]
 					}}
 				>
 					Let&apos;s take your photograph to the next level. Capturing your wonderful and
@@ -49,16 +74,18 @@ export const Main = () => {
 				<Box
 					sx={{
 						display: "flex",
-						flexDirection: ["column-reverse", "column-reverse", "row"],
+						// flexDirection: ["column-reverse", "column-reverse", "row"],
 						gap: "20px",
 						alignItems: "center"
 					}}
 				>
 					<ViewPortfolioButton />
 					<Box
-						sx={{
-							display: ["none", "none", "flex"]
-						}}
+						sx={
+							{
+								// display: ["none", "none", "flex"]
+							}
+						}
 					>
 						<Button
 							sx={{
@@ -108,32 +135,12 @@ export const Main = () => {
 			</Box>
 			<Box
 				sx={{
-					flex: 0.5,
-					display: ["flex", "flex", "none"]
-				}}
-			>
-				<Image
-					src={"/images/harshal.png"}
-					width={600}
-					height={600}
-					style={{
-						objectFit: "cover",
-						objectPosition: "center",
-						position: "absolute",
-						top: "20px",
-						left: "-50%"
-					}}
-					alt="Harshal"
-				/>
-			</Box>
-			<Box
-				sx={{
 					flex: 1,
 					display: "flex",
 					flexDirection: "column",
 					justifyContent: "space-between",
 					gap: "50px",
-					mt: ["30px", "30px", "0px"]
+					mt: ["30px", "30px", "0px"],
 				}}
 			>
 				<Box

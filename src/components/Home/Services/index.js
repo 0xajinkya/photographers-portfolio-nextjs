@@ -11,7 +11,8 @@ export const Services = () => {
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
-        gap: "60px"
+        gap: "60px",
+        overflowX: "hidden"
 			}}
 		>
 			<Box
@@ -28,7 +29,8 @@ export const Services = () => {
 					sx={{
 						fontSize: "50px",
 						fontFamily: "Montserrat",
-						fontWeight: 600
+						fontWeight: 600,
+            textAlign: ["center", "center", "left"]
 					}}
 				>
 					Service I Provide
@@ -36,7 +38,8 @@ export const Services = () => {
 				<Typography
 					sx={{
 						fontFamily: "Montserrat",
-						textAlign: "center"
+						textAlign: "center",
+            textAlign: ["center", "center", "left"]
 					}}
 				>
 					Let&apos;s see the services I am providing for your beautiful moment services <br />{" "}
@@ -68,14 +71,14 @@ export const Services = () => {
         >
 					<Image 
             src={"/images/curve.svg"}
-            width={500}
+            width={250}
             height={300}
             alt="Curve line"
             style={{
               objectFit: "cover",
               position: "absolute",
-              top: "-85px",
-              left: "00px",
+              top: "-15px",
+              left: "40px",
               zIndex: -1
             }}
           />

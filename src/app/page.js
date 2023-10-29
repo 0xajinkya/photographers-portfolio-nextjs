@@ -12,7 +12,7 @@ export default function Home() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        // bgcolor: "#F0EEF0"
+        overflowX: "hidden"
       }}
     >
       <Main />

@@ -13,14 +13,17 @@ export const GoToHome = () => {
 				bgcolor: "#F0EEF0",
 				display: "flex",
 				flexDirection: ["column", "column", "row"],
-				alignItems: "center"
+				alignItems: "center",
+				// overflowX: "hidden",
+				// overflowY: 'hidden',
 			}}
 		>
 			<Box
 				sx={{
 					flex: 1.5,
 					display: "flex",
-					gap: "80px"
+					gap: "80px",
+					// overflowY: 'hidden',
 				}}
 			>
 				<Image
